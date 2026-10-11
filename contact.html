@@ -2,70 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Contact Us </title>
-
-    
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - My Website</title>
 </head>
-<body> 
+<body>
+
     <header>
+        <h1>Contact Us</h1>
         <nav>
-    <a href="index.html">Home</a> | 
-    <a href="about.html">About Us</a> | 
-    <a href="contact.html">Contact Us</a>
-   </nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
-    
-<hr>
 
-    <h1 style="color: navy; text-align: center;">Contact Us</h1>
-     <form>
-        <label for="username" >Name :</label>
-        <input type="text" id="username" name="username"><br> <br>
+    <hr>
 
-        <label for="email" >Email :</label>
-        <input type="email" id="email" name="email"><br><br>
+    <main>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            
+            <!-- Text Input -->
+            <p>
+                <label for="fullname">Full Name (Text):</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
 
-        <label for="date">Date :</label>
-        <input type="date" id="date" name="date"> <br><br>
+            <!-- Email Input -->
+            <p>
+                <label for="email">Email Address (Email):</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
 
-        <label for="number">Number :</label>
-        <input type="number" id="number" name="number"><br><br>
+            <!-- Number Input -->
+            <p>
+                <label for="age">Age (Number):</label><br>
+                <input type="number" id="age" name="age" min="1" max="100">
+            </p>
 
-       <p>Gender:</p>
-       <input type="radio" id="male" name="Gender" value="male">
-       <label for="male" >Male </label>
+            <!-- Date Input -->
+            <p>
+                <label for="birthdate">Date of Birth (Date):</label><br>
+                <input type="date" id="birthdate" name="birthdate">
+            </p>
 
-        <input type="radio" id="female" name="Gender" value="female">
-       <label for="female" >Female </label>
+            <!-- Radio Buttons -->
+            <p>
+                <label>Gender (Radio buttons):</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </p>
 
+            <!-- Checkboxes -->
+            <p>
+                <label>Interests (Checkboxes):</label><br>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+            </p>
 
-       <p>Interests:</p>
-       <input type="checkbox" id="Reading" name="interests" value="Reading">
-       <label for="Reading" >Reading</label>
+            <!-- Dropdown Menu (Select) -->
+            <p>
+                <label for="country">Country (Dropdown menu):</label><br>
+                <select id="country" name="country">
+                    <option value="egypt">Egypt</option>
+                    <option value="saudi">Saudi Arabia</option>
+                    <option value="uae">UAE</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
 
-       <input type="checkbox" id="coding" name="interests" value="coding">
-       <label for="coding">Coding</label> <br><br>
+            <!-- Large Text Box (Textarea) -->
+            <p>
+                <label for="message">Your Message (Large text box):</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </p>
 
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Submit</button>
+            </p>
 
-       <label for="country" >Country: </label>
-       <select id="country" name="country">
-        <option value="Egy">Egypt</option>
-         <option value="Egy">Spain</option>
-          <option value="Egy">Italy</option> 
-       </select> <br><br>
+        </form>
+    </main>
 
+    <hr>
 
-
-       <label for="msg">Message:</label>
-       <textarea id="msg" name="msg" rows="4" cols="30"></textarea>
-        <button type="submit">Send</button>
-       
-
-
-
-    </form>
-
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
